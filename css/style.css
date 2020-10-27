@@ -58,12 +58,31 @@ img {
   }
 }
 
+/* Hover Image Styles */
+
+.top-img {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.back-img {
+  position: absolute;
+  top: 60px;
+}
+
 /* Video Styles */
-iframe {
-  width: 375px;
-  height: 210px;
-  display: flex;
-  justify-content: center;
+
+.sixteen-by-nine {
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.sixteen-by-nine > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Grid Styles */
@@ -195,7 +214,7 @@ nav ul li a {
   }
 
   nav ul li {
-    padding: 20px;
+    padding: 15px;
   }
 
   #hamburger {
