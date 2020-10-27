@@ -14,20 +14,17 @@ h1 {
   color: #e5bf2b;
 }
 
+h2 {
+  font-size: 20px;
+  text-align: center;
+  color: #9accef;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
 p {
   margin: 0;
   font-size: 16px;
-}
-
-#margaret-p {
-  color: #395874;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.home-h1 {
-  margin-bottom: 25px;
-  margin-top: 40px;
 }
 
 img {
@@ -36,15 +33,45 @@ img {
   justify-content: center;
 }
 
+#margaret-p {
+  color: #395874;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.home-h1 {
+  margin-bottom: 25px;
+  margin-top: 40px;
+}
+
+p.credits {
+  text-align: center;
+  color: #395874;
+  margin: 0 20px;
+}
+
+.credits a {
+  color: #395874;
+}
+
 @media (min-width: 768px) {
   h1 {
     font-size: 100px;
     margin: 35px 0;
   }
+  h2 {
+    font-size: 48px;
+    margin-top: 48px;
+    margin-bottom: 24px;
+  }
   .grid-1-3 h1 {
     font-size: 32px;
   }
   p {
+    font-size: 18px;
+  }
+  .credits p {
     font-size: 18px;
   }
 }
@@ -85,19 +112,18 @@ img {
 
 /* Grid Styles */
 
-/* only applied on desktop */
+.grid-1-3 {
+  padding: 0 20px 20px 20px;
+}
+
 @media (min-width: 768px) {
   /* this is a grid with two columns */
   .grid-1-3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 50px;
-    padding: 40px;
+    padding: 0 40px 20px 40px;
   }
-}
-
-.grid-1-3 {
-  padding: 0 20px 20px 20px;
 }
 
 /* Accordian Styles */
